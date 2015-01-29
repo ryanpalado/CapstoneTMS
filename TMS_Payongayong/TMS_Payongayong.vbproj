@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E0C7165-7064-46F6-9D50-AAB4E082E451}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TMS_Payongayong.My.MyApplication</StartupObject>
+    <RootNamespace>TMS_Payongayong</RootNamespace>
+    <AssemblyName>TMS_Payongayong</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TMS_Payongayong.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TMS_Payongayong.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\Camera.vb" />
+    <Compile Include="Camera\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Camera\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\CashAdvanceRprt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CashAdvanceRprt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\DriverFund.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DriverFund.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\DriverInfoRprt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DriverInfoRprt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\ShortBoundaryRprt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShortBoundaryRprt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\TaxiDamagesRprt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiDamagesRprt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal Report\TaxiInfoRprt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiInfoRprt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\ChangeTaxi.Designer.vb">
+      <DependentUpon>ChangeTaxi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\ChangeTaxi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\Dispatch.Designer.vb">
+      <DependentUpon>Dispatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\Dispatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\DispatchPayins.vb" />
+    <Compile Include="DispatchPayinsModule\MainDispatchPayins.Designer.vb">
+      <DependentUpon>MainDispatchPayins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\MainDispatchPayins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\ModifyBoundary.Designer.vb">
+      <DependentUpon>ModifyBoundary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\ModifyBoundary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\Passcode.Designer.vb">
+      <DependentUpon>Passcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchPayinsModule\Passcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\AddCashAdvance.Designer.vb">
+      <DependentUpon>AddCashAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\AddCashAdvance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\CashAdvanceMod.vb" />
+    <Compile Include="DriverModule\Cash Advance\EditCashAdvance.Designer.vb">
+      <DependentUpon>EditCashAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\EditCashAdvance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\PayBalances.Designer.vb">
+      <DependentUpon>PayBalances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\PayBalances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\TransactionCashAdvance.Designer.vb">
+      <DependentUpon>TransactionCashAdvance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Cash Advance\TransactionCashAdvance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\AddFunds.Designer.vb">
+      <DependentUpon>AddFunds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\AddFunds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\DriversFundMod.vb" />
+    <Compile Include="DriverModule\Drivers Account\EditFunds.Designer.vb">
+      <DependentUpon>EditFunds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\EditFunds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\Transactions.Designer.vb">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Account\Transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Info\ViewDriver.Designer.vb">
+      <DependentUpon>ViewDriver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Info\ViewDriver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Info\DriversInfoMod.vb" />
+    <Compile Include="DriverModule\Drivers Info\NewDriver.Designer.vb">
+      <DependentUpon>NewDriver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Drivers Info\NewDriver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\AddShortBoundary.Designer.vb">
+      <DependentUpon>AddShortBoundary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\AddShortBoundary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\EditShortBoundary.Designer.vb">
+      <DependentUpon>EditShortBoundary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\EditShortBoundary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\PayShortBoundary.Designer.vb">
+      <DependentUpon>PayShortBoundary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\PayShortBoundary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\ShortBoundaryMod.vb" />
+    <Compile Include="DriverModule\Short Boundary\TransactionShortBoundary.Designer.vb">
+      <DependentUpon>TransactionShortBoundary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Short Boundary\TransactionShortBoundary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\SSS Funds\AddSSSFunds.Designer.vb">
+      <DependentUpon>AddSSSFunds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\SSS Funds\AddSSSFunds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\SSS Funds\EditSSSFunds.Designer.vb">
+      <DependentUpon>EditSSSFunds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\SSS Funds\EditSSSFunds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\SSS Funds\SSSFundsMod.vb" />
+    <Compile Include="DriverModule\Taxi Damages\TaxiDamagesMod.vb" />
+    <Compile Include="DriverModule\Taxi Damages\TransactionTaxiDamages.Designer.vb">
+      <DependentUpon>TransactionTaxiDamages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\TransactionTaxiDamages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard\ChangePassword.Designer.vb">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard\ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginModule\CreateAccount.Designer.vb">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginModule\CreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginModule\ForgotEnterCode.Designer.vb">
+      <DependentUpon>ForgotEnterCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginModule\ForgotEnterCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginModule\ForgotSendEmail.Designer.vb">
+      <DependentUpon>ForgotSendEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginModule\ForgotSendEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginModule\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginModule\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard\Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard\Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxiModule\ViewTaxi.Designer.vb">
+      <DependentUpon>ViewTaxi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaxiModule\ViewTaxi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\MD5Hashing.vb" />
+    <Compile Include="Modules\MysqlQueries.vb" />
+    <Compile Include="Modules\RandomNumbers.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\AddRecord.Designer.vb">
+      <DependentUpon>AddRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\AddRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\EditRecord.Designer.vb">
+      <DependentUpon>EditRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\EditRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\PayDamages.Designer.vb">
+      <DependentUpon>PayDamages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DriverModule\Taxi Damages\PayDamages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxiModule\NewTaxi.Designer.vb">
+      <DependentUpon>NewTaxi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TaxiModule\NewTaxi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaxiModule\TaxiInfoModule.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Camera\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\CashAdvanceRprt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CashAdvanceRprt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\DriverFund.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DriverFund.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\DriverInfoRprt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DriverInfoRprt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\ShortBoundaryRprt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ShortBoundaryRprt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\TaxiDamagesRprt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TaxiDamagesRprt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Report\TaxiInfoRprt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TaxiInfoRprt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchPayinsModule\ChangeTaxi.resx">
+      <DependentUpon>ChangeTaxi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchPayinsModule\Dispatch.resx">
+      <DependentUpon>Dispatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchPayinsModule\MainDispatchPayins.resx">
+      <DependentUpon>MainDispatchPayins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchPayinsModule\ModifyBoundary.resx">
+      <DependentUpon>ModifyBoundary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchPayinsModule\Passcode.resx">
+      <DependentUpon>Passcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Cash Advance\AddCashAdvance.resx">
+      <DependentUpon>AddCashAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Cash Advance\EditCashAdvance.resx">
+      <DependentUpon>EditCashAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Cash Advance\PayBalances.resx">
+      <DependentUpon>PayBalances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Cash Advance\TransactionCashAdvance.resx">
+      <DependentUpon>TransactionCashAdvance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Drivers Account\AddFunds.resx">
+      <DependentUpon>AddFunds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Drivers Account\EditFunds.resx">
+      <DependentUpon>EditFunds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Drivers Account\Transactions.resx">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Drivers Info\ViewDriver.resx">
+      <DependentUpon>ViewDriver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Drivers Info\NewDriver.resx">
+      <DependentUpon>NewDriver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Short Boundary\AddShortBoundary.resx">
+      <DependentUpon>AddShortBoundary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Short Boundary\EditShortBoundary.resx">
+      <DependentUpon>EditShortBoundary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Short Boundary\PayShortBoundary.resx">
+      <DependentUpon>PayShortBoundary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Short Boundary\TransactionShortBoundary.resx">
+      <DependentUpon>TransactionShortBoundary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\SSS Funds\AddSSSFunds.resx">
+      <DependentUpon>AddSSSFunds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\SSS Funds\EditSSSFunds.resx">
+      <DependentUpon>EditSSSFunds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Taxi Damages\TransactionTaxiDamages.resx">
+      <DependentUpon>TransactionTaxiDamages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard\ChangePassword.resx">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginModule\CreateAccount.resx">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginModule\ForgotEnterCode.resx">
+      <DependentUpon>ForgotEnterCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginModule\ForgotSendEmail.resx">
+      <DependentUpon>ForgotSendEmail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginModule\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxiModule\ViewTaxi.resx">
+      <DependentUpon>ViewTaxi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Taxi Damages\AddRecord.resx">
+      <DependentUpon>AddRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Taxi Damages\EditRecord.resx">
+      <DependentUpon>EditRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverModule\Taxi Damages\PayDamages.resx">
+      <DependentUpon>PayDamages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaxiModule\NewTaxi.resx">
+      <DependentUpon>NewTaxi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Camera\app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DriverModule\Drivers Account\Drivers Info\" />
+    <Folder Include="obj\" />
+    <Folder Include="ScheduleModule\" />
+    <Folder Include="StaffModule\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+    <None Include="Resources\user11.png" />
+    <None Include="Resources\user_avatar1.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\user_avatar.png" />
+    <None Include="Resources\driver.png" />
+    <None Include="Resources\notification.png" />
+    <None Include="Resources\payins.png" />
+    <None Include="Resources\reports.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\staffs.png" />
+    <None Include="Resources\taxi.png" />
+    <None Include="Resources\driver1.png" />
+    <None Include="Resources\notification1.png" />
+    <None Include="Resources\payins1.png" />
+    <None Include="Resources\reports1.png" />
+    <None Include="Resources\schedule1.png" />
+    <None Include="Resources\staffs1.png" />
+    <None Include="Resources\taxi1.png" />
+    <None Include="Resources\computer.png" />
+    <None Include="Resources\taxi2.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\steeringwheel.png" />
+    <None Include="Resources\profle.png" />
+    <None Include="Resources\arrow-up.png" />
+    <None Include="Resources\arrow-down.png" />
+    <Content Include="logo.ico" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\exclamation_point.png" />
+    <Content Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
