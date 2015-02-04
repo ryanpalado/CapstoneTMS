@@ -4,6 +4,7 @@ Imports Telerik.WinControls
 Public Class Login
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
 
         'Check if there is a stored username
         If My.Settings.status = True Then
@@ -88,41 +89,84 @@ Public Class Login
     End Sub
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
+         getnow("SELECT  `full_name`,  `user_type`, `temp_code`, `status` FROM `tbl_users` WHERE username='" & txtUser.Text.Replace("'", " ") & "' and password='" & encryptHash(txtPass.Text) & "'")
 
-        If txtUser.Text = "" And txtPass.Text = "" Then
-            RadMessageBox.SetThemeName("Windows8")
-            Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
-        End If
+        If dt.Rows.Count > 0 Then
+            If dt.Rows(0).Item(3) = "Active" Then
 
-        If txtUser.Text = "" And txtPass.Text <> "" Then
-            RadMessageBox.SetThemeName("Windows8")
-            Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
-        End If
+                If dt.Rows(0).Item(1) = "Secretary" Then
+                    Dashboard.Show()
+                    ''Maglagay kyo ng iba pang function like may ma didisabled sa DashBorad .. ky0 na bahala
+                    Me.Close()
 
-        If txtUser.Text <> "" And txtPass.Text = "" Then
-            RadMessageBox.SetThemeName("Windows8")
-            Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
-        End If
+                ElseIf dt.Rows(0).Item(1) = "Administrator" Then
 
-        If txtUser.Text <> "" And txtPass.Text <> "" Then
-            selectQuery("select * from tbl_users where username='" & txtUser.Text & "'  ")
+                    Dashboard.Show()
+                    Me.Close()
 
-            If dr.HasRows Then
-                Dim Password As String = dr.Item("password")
-                Dim DecryptedPass As String = decryptHash(Password)
-
-                If txtPass.Text = DecryptedPass Then
-                    MsgBox("Login Success")
-                Else
-                    MsgBox("Incorrect username or password. Please try again.")
                 End If
 
+            Else
+                MsgBox("User is inActive, please contact your adminstartor!", MsgBoxStyle.Information)
+
             End If
-            If dr.HasRows = False Then
-                RadMessageBox.SetThemeName("Windows8")
-                Dim prompt As DialogResult = RadMessageBox.Show(Me, "Incorrect username or password. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
-            End If
+
+        Else
+            MsgBox("Invalid Account, Please try Again!", MsgBoxStyle.Exclamation)
+
         End If
+
+
+
+
+
+
+
+
+
+
+
+        'conn.Close()
+        'conn.Open()
+        'MsgBox("Success")
+
+
+
+        'RadMessageBox.SetThemeName("Windows8")
+        'If txtUser.Text = "" And txtPass.Text = "" Then
+
+        '    Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
+        'End If
+
+        'If txtUser.Text = "" And txtPass.Text <> "" Then
+
+        '    Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
+        'End If
+
+        'If txtUser.Text <> "" And txtPass.Text = "" Then
+
+        '    Dim prompt As DialogResult = RadMessageBox.Show(Me, "Invalid Login. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
+        'End If
+
+        'If txtUser.Text <> "" And txtPass.Text <> "" Then
+        '    selectQuery("select * from tbl_users where username='" & txtUser.Text & "'  ")
+
+        '    If dr.HasRows Then
+        '        Dim Password As String = dr.Item("password")
+        '        Dim DecryptedPass As String = decryptHash(Password)
+
+        '        If txtPass.Text = DecryptedPass Then
+        '            MsgBox("Login Success")
+        '        Else
+        '            MsgBox("Incorrect username or password. Please try again.")
+        '        End If
+
+        '    End If
+        '    If dr.HasRows = False Then
+
+        '        Dim prompt As DialogResult = RadMessageBox.Show(Me, "Incorrect username or password. Please try again.", "Failed", MessageBoxButtons.OK, RadMessageIcon.Error)
+        '    End If
+        'End If
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
@@ -140,5 +184,18 @@ Public Class Login
 
     Private Sub txtPass_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtPass.TextChanged
 
+    End Sub
+
+ 
+    Private Sub Login_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+     
+    End Sub
+
+    Private Sub Login_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
+      
+    End Sub
+
+    Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
+            ConnectionSettings.Show()
     End Sub
 End Class

@@ -109,37 +109,43 @@
     <Compile Include="Camera\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Crystal Report\CashAdvanceRprt.vb">
+    <Compile Include="ConnectionModule\ConnectionSettings.Designer.vb">
+      <DependentUpon>ConnectionSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionModule\ConnectionSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bin\Debug\Crystal Report\CashAdvanceRprt.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CashAdvanceRprt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crystal Report\DriverFund.vb">
+    <Compile Include="bin\Debug\Crystal Report\DriverFund.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DriverFund.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crystal Report\DriverInfoRprt.vb">
+    <Compile Include="bin\Debug\Crystal Report\DriverInfoRprt.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DriverInfoRprt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crystal Report\ShortBoundaryRprt.vb">
+    <Compile Include="bin\Debug\Crystal Report\ShortBoundaryRprt.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShortBoundaryRprt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crystal Report\TaxiDamagesRprt.vb">
+    <Compile Include="bin\Debug\Crystal Report\TaxiDamagesRprt.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaxiDamagesRprt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Crystal Report\TaxiInfoRprt.vb">
+    <Compile Include="bin\Debug\Crystal Report\TaxiInfoRprt.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaxiInfoRprt.rpt</DependentUpon>
@@ -278,10 +284,10 @@
     <Compile Include="DriverModule\Taxi Damages\TransactionTaxiDamages.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainDashboard\ChangePassword.Designer.vb">
+    <Compile Include="LoginModule\ChangePassword.Designer.vb">
       <DependentUpon>ChangePassword.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainDashboard\ChangePassword.vb">
+    <Compile Include="LoginModule\ChangePassword.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginModule\CreateAccount.Designer.vb">
@@ -363,33 +369,42 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TaxiModule\TaxiInfoModule.vb" />
+    <Compile Include="updateUSerstatus.Designer.vb">
+      <DependentUpon>updateUSerstatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateUSerstatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Camera\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\CashAdvanceRprt.rpt">
+    <EmbeddedResource Include="ConnectionModule\ConnectionSettings.resx">
+      <DependentUpon>ConnectionSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\Crystal Report\CashAdvanceRprt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CashAdvanceRprt.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\DriverFund.rpt">
+    <EmbeddedResource Include="bin\Debug\Crystal Report\DriverFund.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DriverFund.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\DriverInfoRprt.rpt">
+    <EmbeddedResource Include="bin\Debug\Crystal Report\DriverInfoRprt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DriverInfoRprt.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\ShortBoundaryRprt.rpt">
+    <EmbeddedResource Include="bin\Debug\Crystal Report\ShortBoundaryRprt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ShortBoundaryRprt.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\TaxiDamagesRprt.rpt">
+    <EmbeddedResource Include="bin\Debug\Crystal Report\TaxiDamagesRprt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TaxiDamagesRprt.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crystal Report\TaxiInfoRprt.rpt">
+    <EmbeddedResource Include="bin\Debug\Crystal Report\TaxiInfoRprt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TaxiInfoRprt.vb</LastGenOutput>
     </EmbeddedResource>
@@ -456,7 +471,7 @@
     <EmbeddedResource Include="DriverModule\Taxi Damages\TransactionTaxiDamages.resx">
       <DependentUpon>TransactionTaxiDamages.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainDashboard\ChangePassword.resx">
+    <EmbeddedResource Include="LoginModule\ChangePassword.resx">
       <DependentUpon>ChangePassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginModule\CreateAccount.resx">
@@ -494,6 +509,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaxiModule\NewTaxi.resx">
       <DependentUpon>NewTaxi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateUSerstatus.resx">
+      <DependentUpon>updateUSerstatus.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -35,6 +35,7 @@ Partial Class Login
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Office2010SilverTheme1 = New Telerik.WinControls.Themes.Office2010SilverTheme()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.RadButton1 = New Telerik.WinControls.UI.RadButton()
         CType(Me.txtUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtPass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnLogin, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,6 +45,7 @@ Partial Class Login
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -150,12 +152,21 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'RadButton1
+        '
+        Me.RadButton1.Location = New System.Drawing.Point(3, 13)
+        Me.RadButton1.Name = "RadButton1"
+        Me.RadButton1.Size = New System.Drawing.Size(53, 30)
+        Me.RadButton1.TabIndex = 9
+        Me.RadButton1.Text = "Settings"
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(326, 466)
+        Me.Controls.Add(Me.RadButton1)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.RadLabel2)
         Me.Controls.Add(Me.RadLabel1)
@@ -183,6 +194,7 @@ Partial Class Login
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -200,5 +212,6 @@ Partial Class Login
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents Office2010SilverTheme1 As Telerik.WinControls.Themes.Office2010SilverTheme
+    Friend WithEvents RadButton1 As Telerik.WinControls.UI.RadButton
 End Class
 

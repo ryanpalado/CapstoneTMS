@@ -57,7 +57,6 @@ Partial Class NewDriver
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -69,43 +68,44 @@ Partial Class NewDriver
         Me.txtReligion = New Telerik.WinControls.UI.RadTextBox()
         Me.txtDriverMobile = New Telerik.WinControls.UI.RadTextBox()
         Me.txtAddress = New Telerik.WinControls.UI.RadTextBox()
-        Me.txtAge = New Telerik.WinControls.UI.RadTextBox()
         Me.txtMiddleName = New Telerik.WinControls.UI.RadTextBox()
         Me.txtFirstName = New Telerik.WinControls.UI.RadTextBox()
         Me.txtLastName = New Telerik.WinControls.UI.RadTextBox()
         Me.lblTaxiID = New System.Windows.Forms.Label()
-        CType(Me.picDriver, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnBrowseImage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadGroupBox1.SuspendLayout()
-        CType(Me.btnCamera, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGroupBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadGroupBox3.SuspendLayout()
-        CType(Me.txtContactNo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtContactName, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGroupBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadGroupBox4.SuspendLayout()
-        CType(Me.txtAssignedTaxi, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drpdwnDriverStatus, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtLicense, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtSSS, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnSave, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnClear, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnCancel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drpdwnCivilStatus, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.drpdwnGender, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGroupBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadGroupBox2.SuspendLayout()
-        CType(Me.txtReligion, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtDriverMobile, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtAddress, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtAge, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtMiddleName, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtFirstName, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.txtLastName, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.RadDateTimePicker1 = New Telerik.WinControls.UI.RadDateTimePicker()
+        CType(Me.picDriver,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.btnBrowseImage,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadGroupBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.RadGroupBox1.SuspendLayout
+        CType(Me.btnCamera,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadLabel1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadGroupBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.RadGroupBox3.SuspendLayout
+        CType(Me.txtContactNo,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtContactName,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadGroupBox4,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.RadGroupBox4.SuspendLayout
+        CType(Me.txtAssignedTaxi,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.drpdwnDriverStatus,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtLicense,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtSSS,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.btnSave,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.btnClear,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.btnCancel,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.drpdwnCivilStatus,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.drpdwnGender,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadGroupBox2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.RadGroupBox2.SuspendLayout
+        CType(Me.txtReligion,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtDriverMobile,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtAddress,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtMiddleName,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtFirstName,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.txtLastName,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.RadDateTimePicker1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'picDriver
         '
@@ -116,7 +116,7 @@ Partial Class NewDriver
         Me.picDriver.Size = New System.Drawing.Size(150, 150)
         Me.picDriver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picDriver.TabIndex = 0
-        Me.picDriver.TabStop = False
+        Me.picDriver.TabStop = false
         '
         'btnBrowseImage
         '
@@ -165,7 +165,7 @@ Partial Class NewDriver
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
+        Me.Label6.AutoSize = true
         Me.Label6.Location = New System.Drawing.Point(19, 61)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 17)
@@ -174,7 +174,7 @@ Partial Class NewDriver
         '
         'Label5
         '
-        Me.Label5.AutoSize = True
+        Me.Label5.AutoSize = true
         Me.Label5.Location = New System.Drawing.Point(19, 86)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(54, 17)
@@ -183,7 +183,7 @@ Partial Class NewDriver
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(19, 35)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(123, 17)
@@ -226,7 +226,7 @@ Partial Class NewDriver
         '
         'Label14
         '
-        Me.Label14.AutoSize = True
+        Me.Label14.AutoSize = true
         Me.Label14.Location = New System.Drawing.Point(19, 62)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(77, 17)
@@ -235,7 +235,7 @@ Partial Class NewDriver
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
+        Me.Label13.AutoSize = true
         Me.Label13.Location = New System.Drawing.Point(19, 35)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(91, 17)
@@ -274,7 +274,7 @@ Partial Class NewDriver
         '
         'Label16
         '
-        Me.Label16.AutoSize = True
+        Me.Label16.AutoSize = true
         Me.Label16.Location = New System.Drawing.Point(19, 113)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(88, 17)
@@ -286,9 +286,9 @@ Partial Class NewDriver
         Me.drpdwnDriverStatus.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
         Me.drpdwnDriverStatus.Font = New System.Drawing.Font("Segoe UI", 9.25!)
         RadListDataItem1.Text = "Regular"
-        RadListDataItem1.TextWrap = True
+        RadListDataItem1.TextWrap = true
         RadListDataItem2.Text = "Extra"
-        RadListDataItem2.TextWrap = True
+        RadListDataItem2.TextWrap = true
         Me.drpdwnDriverStatus.Items.Add(RadListDataItem1)
         Me.drpdwnDriverStatus.Items.Add(RadListDataItem2)
         Me.drpdwnDriverStatus.Location = New System.Drawing.Point(152, 56)
@@ -306,7 +306,7 @@ Partial Class NewDriver
         Me.txtLicense.Name = "txtLicense"
         Me.txtLicense.Size = New System.Drawing.Size(186, 22)
         Me.txtLicense.TabIndex = 16
-        Me.txtLicense.TabStop = False
+        Me.txtLicense.TabStop = false
         Me.txtLicense.Text = "___-__-______"
         Me.txtLicense.ThemeName = "Office2010Silver"
         '
@@ -319,7 +319,7 @@ Partial Class NewDriver
         Me.txtSSS.Name = "txtSSS"
         Me.txtSSS.Size = New System.Drawing.Size(186, 22)
         Me.txtSSS.TabIndex = 15
-        Me.txtSSS.TabStop = False
+        Me.txtSSS.TabStop = false
         Me.txtSSS.Text = "__-______-_"
         Me.txtSSS.ThemeName = "Office2010Silver"
         '
@@ -359,7 +359,7 @@ Partial Class NewDriver
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(13, 34)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(70, 17)
@@ -368,7 +368,7 @@ Partial Class NewDriver
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(13, 60)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 17)
@@ -377,26 +377,17 @@ Partial Class NewDriver
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(13, 86)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(88, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Middle Name"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(13, 111)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(31, 17)
-        Me.Label7.TabIndex = 3
-        Me.Label7.Text = "Age"
-        '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(13, 137)
+        Me.Label8.AutoSize = true
+        Me.Label8.Location = New System.Drawing.Point(13, 143)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(51, 17)
         Me.Label8.TabIndex = 4
@@ -404,8 +395,8 @@ Partial Class NewDriver
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(13, 160)
+        Me.Label9.AutoSize = true
+        Me.Label9.Location = New System.Drawing.Point(13, 166)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 17)
         Me.Label9.TabIndex = 5
@@ -413,8 +404,8 @@ Partial Class NewDriver
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(13, 228)
+        Me.Label10.AutoSize = true
+        Me.Label10.Location = New System.Drawing.Point(13, 234)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(70, 17)
         Me.Label10.TabIndex = 6
@@ -422,8 +413,8 @@ Partial Class NewDriver
         '
         'Label11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(13, 255)
+        Me.Label11.AutoSize = true
+        Me.Label11.Location = New System.Drawing.Point(13, 261)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(74, 17)
         Me.Label11.TabIndex = 7
@@ -431,8 +422,8 @@ Partial Class NewDriver
         '
         'Label12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(13, 282)
+        Me.Label12.AutoSize = true
+        Me.Label12.Location = New System.Drawing.Point(14, 286)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(55, 17)
         Me.Label12.TabIndex = 8
@@ -443,20 +434,20 @@ Partial Class NewDriver
         Me.drpdwnCivilStatus.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
         Me.drpdwnCivilStatus.Font = New System.Drawing.Font("Segoe UI", 9.25!)
         RadListDataItem3.Text = "Single"
-        RadListDataItem3.TextWrap = True
+        RadListDataItem3.TextWrap = true
         RadListDataItem4.Text = "Married"
-        RadListDataItem4.TextWrap = True
+        RadListDataItem4.TextWrap = true
         RadListDataItem5.Text = "Widowed"
-        RadListDataItem5.TextWrap = True
+        RadListDataItem5.TextWrap = true
         Me.drpdwnCivilStatus.Items.Add(RadListDataItem3)
         Me.drpdwnCivilStatus.Items.Add(RadListDataItem4)
         Me.drpdwnCivilStatus.Items.Add(RadListDataItem5)
-        Me.drpdwnCivilStatus.Location = New System.Drawing.Point(129, 223)
+        Me.drpdwnCivilStatus.Location = New System.Drawing.Point(129, 229)
         Me.drpdwnCivilStatus.Name = "drpdwnCivilStatus"
         '
         '
         '
-        Me.drpdwnCivilStatus.RootElement.StretchVertically = True
+        Me.drpdwnCivilStatus.RootElement.StretchVertically = true
         Me.drpdwnCivilStatus.Size = New System.Drawing.Size(186, 22)
         Me.drpdwnCivilStatus.TabIndex = 9
         Me.drpdwnCivilStatus.ThemeName = "Office2010Silver"
@@ -466,17 +457,17 @@ Partial Class NewDriver
         Me.drpdwnGender.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList
         Me.drpdwnGender.Font = New System.Drawing.Font("Segoe UI", 9.25!)
         RadListDataItem6.Text = "Male"
-        RadListDataItem6.TextWrap = True
+        RadListDataItem6.TextWrap = true
         RadListDataItem7.Text = "Female"
-        RadListDataItem7.TextWrap = True
+        RadListDataItem7.TextWrap = true
         Me.drpdwnGender.Items.Add(RadListDataItem6)
         Me.drpdwnGender.Items.Add(RadListDataItem7)
-        Me.drpdwnGender.Location = New System.Drawing.Point(129, 134)
+        Me.drpdwnGender.Location = New System.Drawing.Point(129, 140)
         Me.drpdwnGender.Name = "drpdwnGender"
         '
         '
         '
-        Me.drpdwnGender.RootElement.StretchVertically = True
+        Me.drpdwnGender.RootElement.StretchVertically = true
         Me.drpdwnGender.Size = New System.Drawing.Size(186, 20)
         Me.drpdwnGender.TabIndex = 12
         Me.drpdwnGender.ThemeName = "Office2010Silver"
@@ -484,12 +475,13 @@ Partial Class NewDriver
         'RadGroupBox2
         '
         Me.RadGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me.RadGroupBox2.Controls.Add(Me.RadDateTimePicker1)
+        Me.RadGroupBox2.Controls.Add(Me.Label15)
         Me.RadGroupBox2.Controls.Add(Me.drpdwnGender)
         Me.RadGroupBox2.Controls.Add(Me.drpdwnCivilStatus)
         Me.RadGroupBox2.Controls.Add(Me.txtReligion)
         Me.RadGroupBox2.Controls.Add(Me.txtDriverMobile)
         Me.RadGroupBox2.Controls.Add(Me.txtAddress)
-        Me.RadGroupBox2.Controls.Add(Me.txtAge)
         Me.RadGroupBox2.Controls.Add(Me.txtMiddleName)
         Me.RadGroupBox2.Controls.Add(Me.txtFirstName)
         Me.RadGroupBox2.Controls.Add(Me.txtLastName)
@@ -498,15 +490,14 @@ Partial Class NewDriver
         Me.RadGroupBox2.Controls.Add(Me.Label10)
         Me.RadGroupBox2.Controls.Add(Me.Label9)
         Me.RadGroupBox2.Controls.Add(Me.Label8)
-        Me.RadGroupBox2.Controls.Add(Me.Label7)
         Me.RadGroupBox2.Controls.Add(Me.Label3)
         Me.RadGroupBox2.Controls.Add(Me.Label2)
         Me.RadGroupBox2.Controls.Add(Me.Label1)
         Me.RadGroupBox2.Font = New System.Drawing.Font("Segoe UI", 9.25!)
         Me.RadGroupBox2.HeaderText = "Personal Information"
-        Me.RadGroupBox2.Location = New System.Drawing.Point(12, 173)
+        Me.RadGroupBox2.Location = New System.Drawing.Point(12, 168)
         Me.RadGroupBox2.Name = "RadGroupBox2"
-        Me.RadGroupBox2.Size = New System.Drawing.Size(374, 328)
+        Me.RadGroupBox2.Size = New System.Drawing.Size(374, 343)
         Me.RadGroupBox2.TabIndex = 3
         Me.RadGroupBox2.Text = "Personal Information"
         Me.RadGroupBox2.ThemeName = "Office2010Silver"
@@ -514,7 +505,7 @@ Partial Class NewDriver
         'txtReligion
         '
         Me.txtReligion.Font = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.txtReligion.Location = New System.Drawing.Point(129, 277)
+        Me.txtReligion.Location = New System.Drawing.Point(129, 283)
         Me.txtReligion.Name = "txtReligion"
         Me.txtReligion.Size = New System.Drawing.Size(186, 22)
         Me.txtReligion.TabIndex = 11
@@ -523,7 +514,7 @@ Partial Class NewDriver
         'txtDriverMobile
         '
         Me.txtDriverMobile.Font = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.txtDriverMobile.Location = New System.Drawing.Point(129, 250)
+        Me.txtDriverMobile.Location = New System.Drawing.Point(129, 256)
         Me.txtDriverMobile.MaxLength = 11
         Me.txtDriverMobile.Name = "txtDriverMobile"
         Me.txtDriverMobile.Size = New System.Drawing.Size(186, 22)
@@ -532,23 +523,14 @@ Partial Class NewDriver
         '
         'txtAddress
         '
-        Me.txtAddress.AutoSize = False
+        Me.txtAddress.AutoSize = false
         Me.txtAddress.Font = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.txtAddress.Location = New System.Drawing.Point(129, 160)
-        Me.txtAddress.Multiline = True
+        Me.txtAddress.Location = New System.Drawing.Point(129, 166)
+        Me.txtAddress.Multiline = true
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(186, 57)
         Me.txtAddress.TabIndex = 8
         Me.txtAddress.ThemeName = "Office2010Silver"
-        '
-        'txtAge
-        '
-        Me.txtAge.Font = New System.Drawing.Font("Segoe UI", 9.25!)
-        Me.txtAge.Location = New System.Drawing.Point(129, 106)
-        Me.txtAge.Name = "txtAge"
-        Me.txtAge.Size = New System.Drawing.Size(186, 22)
-        Me.txtAge.TabIndex = 6
-        Me.txtAge.ThemeName = "Office2010Silver"
         '
         'txtMiddleName
         '
@@ -579,19 +561,41 @@ Partial Class NewDriver
         '
         'lblTaxiID
         '
-        Me.lblTaxiID.AutoSize = True
+        Me.lblTaxiID.AutoSize = true
         Me.lblTaxiID.Location = New System.Drawing.Point(736, 12)
         Me.lblTaxiID.Name = "lblTaxiID"
         Me.lblTaxiID.Size = New System.Drawing.Size(11, 13)
         Me.lblTaxiID.TabIndex = 21
         Me.lblTaxiID.Text = "-"
-        Me.lblTaxiID.Visible = False
+        Me.lblTaxiID.Visible = false
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = true
+        Me.Label15.Location = New System.Drawing.Point(13, 111)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(88, 17)
+        Me.Label15.TabIndex = 13
+        Me.Label15.Text = "Date of Birth :"
+        '
+        'RadDateTimePicker1
+        '
+        Me.RadDateTimePicker1.CustomFormat = "MMMM dd, yyyy"
+        Me.RadDateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.25!)
+        Me.RadDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.RadDateTimePicker1.Location = New System.Drawing.Point(129, 110)
+        Me.RadDateTimePicker1.Name = "RadDateTimePicker1"
+        Me.RadDateTimePicker1.Size = New System.Drawing.Size(186, 22)
+        Me.RadDateTimePicker1.TabIndex = 14
+        Me.RadDateTimePicker1.TabStop = false
+        Me.RadDateTimePicker1.Text = "February 04, 2015"
+        Me.RadDateTimePicker1.Value = New Date(2015, 2, 4, 11, 47, 59, 203)
         '
         'NewDriver
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoScroll = True
+        Me.AutoScroll = true
         Me.ClientSize = New System.Drawing.Size(794, 514)
         Me.Controls.Add(Me.lblTaxiID)
         Me.Controls.Add(Me.btnClear)
@@ -602,55 +606,55 @@ Partial Class NewDriver
         Me.Controls.Add(Me.RadGroupBox2)
         Me.Controls.Add(Me.RadGroupBox1)
         Me.Controls.Add(Me.picDriver)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
+        Me.MaximizeBox = false
         Me.Name = "NewDriver"
         '
         '
         '
-        Me.RootElement.ApplyShapeToControl = True
+        Me.RootElement.ApplyShapeToControl = true
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Add New Driver"
         Me.ThemeName = "Office2010Silver"
-        CType(Me.picDriver, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnBrowseImage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadGroupBox1.ResumeLayout(False)
-        Me.RadGroupBox1.PerformLayout()
-        CType(Me.btnCamera, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGroupBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadGroupBox3.ResumeLayout(False)
-        Me.RadGroupBox3.PerformLayout()
-        CType(Me.txtContactNo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtContactName, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGroupBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadGroupBox4.ResumeLayout(False)
-        Me.RadGroupBox4.PerformLayout()
-        CType(Me.txtAssignedTaxi, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drpdwnDriverStatus, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtLicense, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtSSS, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnSave, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnClear, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnCancel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drpdwnCivilStatus, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.drpdwnGender, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGroupBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadGroupBox2.ResumeLayout(False)
-        Me.RadGroupBox2.PerformLayout()
-        CType(Me.txtReligion, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtDriverMobile, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtAddress, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtAge, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtMiddleName, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtFirstName, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.txtLastName, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.picDriver,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.btnBrowseImage,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadGroupBox1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.RadGroupBox1.ResumeLayout(false)
+        Me.RadGroupBox1.PerformLayout
+        CType(Me.btnCamera,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadLabel1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadGroupBox3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.RadGroupBox3.ResumeLayout(false)
+        Me.RadGroupBox3.PerformLayout
+        CType(Me.txtContactNo,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtContactName,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadGroupBox4,System.ComponentModel.ISupportInitialize).EndInit
+        Me.RadGroupBox4.ResumeLayout(false)
+        Me.RadGroupBox4.PerformLayout
+        CType(Me.txtAssignedTaxi,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.drpdwnDriverStatus,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtLicense,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtSSS,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.btnSave,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.btnClear,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.btnCancel,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.drpdwnCivilStatus,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.drpdwnGender,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadGroupBox2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.RadGroupBox2.ResumeLayout(false)
+        Me.RadGroupBox2.PerformLayout
+        CType(Me.txtReligion,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtDriverMobile,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtAddress,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtMiddleName,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtFirstName,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.txtLastName,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.RadDateTimePicker1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents Office2010SilverTheme1 As Telerik.WinControls.Themes.Office2010SilverTheme
     Friend WithEvents picDriver As System.Windows.Forms.PictureBox
     Friend WithEvents btnBrowseImage As Telerik.WinControls.UI.RadButton
@@ -677,7 +681,6 @@ Partial Class NewDriver
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -689,11 +692,12 @@ Partial Class NewDriver
     Friend WithEvents txtReligion As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtDriverMobile As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtAddress As Telerik.WinControls.UI.RadTextBox
-    Friend WithEvents txtAge As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtMiddleName As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtFirstName As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtLastName As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents txtAssignedTaxi As Telerik.WinControls.UI.RadDropDownList
     Friend WithEvents lblTaxiID As System.Windows.Forms.Label
+    Friend WithEvents RadDateTimePicker1 As Telerik.WinControls.UI.RadDateTimePicker
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class
 

@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Data.Odbc
 Imports Telerik.WinControls
+Imports MySql.Data.MySqlClient
 
 Public Class NewDriver
     Dim imgMemoryStream As MemoryStream = New MemoryStream()
@@ -14,7 +15,7 @@ Public Class NewDriver
     End Sub
 
     Public Sub TaxiCombo()
-        cmd = New OdbcCommand("select plate_no from tbl_taxi_info where taxi_status='Available' AND driver=2 Or driver=1 ", conn)
+        cmd = New MySqlCommand("select plate_no from tbl_taxi_info where taxi_status='Available' AND driver=2 Or driver=1 ", conn)
         Using dr = cmd.ExecuteReader()
             While dr.Read
                 txtAssignedTaxi.Items.Add(dr("plate_no").ToString())
@@ -38,32 +39,36 @@ Public Class NewDriver
         Dim removed As String
         removed = "No"
 
-        Try
-            conn.Close()
-            conn.Open()
-            Dim addDriverInfo As New OdbcCommand("insert into tbl_drivers_info (last_name,first_name,middle_name,license_no,sss_no,driver_status,assigned_taxi,age,gender,address,civil_status,mobile_no,religion,contact_name,contact_no,image,removed) values ('" & txtLastName.Text & "','" & txtFirstName.Text & "','" & txtMiddleName.Text & "','" & txtLicense.Text & "','" & txtSSS.Text & "','" & drpdwnDriverStatus.Text & "','" & txtAssignedTaxi.Text & "','" & txtAge.Text & "','" & drpdwnGender.Text & "','" & txtAddress.Text & "','" & drpdwnCivilStatus.Text & "','" & txtDriverMobile.Text & "','" & txtReligion.Text & "','" & txtContactName.Text & "','" & txtContactNo.Text & "', ?, '" & removed & "' ) ", conn)
-            addDriverInfo.Parameters.AddWithValue("Image_Data", imgByteArray)
-            addDriverInfo.ExecuteNonQuery()
-            modifyQuery("Update tbl_taxi_info set Driver = Driver - 1 where plate_no='" & lblTaxiID.Text & "';")
+        ' Try
+        conn.Close()
+        conn.Open()
+        Dim addDriverInfo As New MySqlDataAdapter("insert into tbl_drivers_info (bday,last_name,first_name,middle_name,license_no,sss_no,driver_status,assigned_taxi,age,gender,address,civil_status,mobile_no,religion,contact_name,contact_no,removed) values ('" & RadDateTimePicker1.Value.ToString("yyyy-MM-dd") & "','" & txtLastName.Text & "','" & txtFirstName.Text & "','" & txtMiddleName.Text & "','" & txtLicense.Text & "','" & txtSSS.Text & "','" & drpdwnDriverStatus.Text & "','" & txtAssignedTaxi.Text & "',Floor(DateDiff(Now(),bday)/365.25),'" & drpdwnGender.Text & "','" & txtAddress.Text & "','" & drpdwnCivilStatus.Text & "','" & txtDriverMobile.Text & "','" & txtReligion.Text & "','" & txtContactName.Text & "','" & txtContactNo.Text & "',  'No' ) ", conn)
+        dt = New DataTable
+        addDriverInfo.Fill(dt)
 
-            RadMessageBox.SetThemeName("Office2010Silver")
-            Dim dialog As DialogResult = RadMessageBox.Show(Me, "Driver information successfully added to the database. Add another?", "Message", MessageBoxButtons.YesNo, RadMessageIcon.Question)
+        ''addDriverInfo.Parameters.AddWithValue("Image_Data", imgByteArray)
+        ''addDriverInfo.ExecuteNonQuery()
+        'modifyQuery("Update tbl_taxi_info set Driver = Driver - 1 where plate_no='" & lblTaxiID.Text & "';")
 
-            Me.Text = dialog.ToString()
-            getAllDriversInfoFromDB()
+        'RadMessageBox.SetThemeName("Office2010Silver")
+        'Dim dialog As DialogResult = RadMessageBox.Show(Me, "Driver information successfully added to the database. Add another?", "Message", MessageBoxButtons.YesNo, RadMessageIcon.Question)
 
-            If dialog = DialogResult.Yes Then
-                ClearText()
-            ElseIf dialog = DialogResult.No Then
-                Me.Close()
-                Dashboard.Enabled = True
-            End If
+        'Me.Text = dialog.ToString()
+        'getAllDriversInfoFromDB()
 
-            picDriver.Image = Nothing
-            conn.Close()
-        Catch ex As Exception
+        'If dialog = DialogResult.Yes Then
+        '    ClearText()
+        'ElseIf dialog = DialogResult.No Then
+        '    Me.Close()
+        '    Dashboard.Enabled = True
+        'End If
 
-        End Try
+        'picDriver.Image = Nothing
+        '    'conn.Close()
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+
+        'End Try
     End Sub
 
     Private Sub btnBrowseImage_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowseImage.Click
@@ -92,7 +97,7 @@ Public Class NewDriver
         txtLastName.Text = ""
         txtFirstName.Text = ""
         txtMiddleName.Text = ""
-        txtAge.Text = ""
+
         txtAddress.Text = ""
         drpdwnCivilStatus.Text = ""
         txtDriverMobile.Text = ""
@@ -113,4 +118,13 @@ Public Class NewDriver
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         Me.Close()
     End Sub
+
+    Private Sub RadDateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles RadDateTimePicker1.ValueChanged
+        '   txtAge.Text = Math.Floor(DateDiff(DateTime.Now, RadDateTimePicker1.Value) / 365.25)
+
+       
+
+    End Sub
+
+
 End Class

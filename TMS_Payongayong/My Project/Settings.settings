@@ -14,9 +14,27 @@
     <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Dsn=tms_payongayong&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;server=mysql5002.Smarterasp.net;uid=9bb18f_tms;pwd=tmsdev2015;port=;database=db_9bb18f_tms;&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=mysql5002.Smarterasp.net;uid=9bb18f_tms;pwd=tmsdev2015;port=;database=db_9bb18f_tms;</Value>
+    </Setting>
+    <Setting Name="userko" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="serverko" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="passko" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="portko" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="databaseko" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="constringbackup" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dsn=tms_payongayong</Value>
     </Setting>
   </Settings>

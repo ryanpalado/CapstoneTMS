@@ -23,30 +23,30 @@ Partial Class CreateAccount
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadTextBox1 = New Telerik.WinControls.UI.RadTextBox()
-        Me.RadTextBox2 = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtlname = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtfname = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel2 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadTextBox3 = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtmname = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadTextBox4 = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtuname = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel4 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadTextBox5 = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtpass = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel5 = New Telerik.WinControls.UI.RadLabel()
-        Me.RadTextBox6 = New Telerik.WinControls.UI.RadTextBox()
+        Me.txtemail = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel6 = New Telerik.WinControls.UI.RadLabel()
         Me.RadButton1 = New Telerik.WinControls.UI.RadButton()
         Me.Office2010SilverTheme1 = New Telerik.WinControls.Themes.Office2010SilverTheme()
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtlname, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtfname, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtmname, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtuname, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtpass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadTextBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtemail, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,21 +61,21 @@ Partial Class CreateAccount
         Me.RadLabel1.Text = "Last Name"
         Me.RadLabel1.ThemeName = "Office2010Silver"
         '
-        'RadTextBox1
+        'txtlname
         '
-        Me.RadTextBox1.Location = New System.Drawing.Point(108, 33)
-        Me.RadTextBox1.Name = "RadTextBox1"
-        Me.RadTextBox1.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox1.TabIndex = 1
-        Me.RadTextBox1.ThemeName = "Office2010Silver"
+        Me.txtlname.Location = New System.Drawing.Point(108, 33)
+        Me.txtlname.Name = "txtlname"
+        Me.txtlname.Size = New System.Drawing.Size(190, 20)
+        Me.txtlname.TabIndex = 1
+        Me.txtlname.ThemeName = "Office2010Silver"
         '
-        'RadTextBox2
+        'txtfname
         '
-        Me.RadTextBox2.Location = New System.Drawing.Point(108, 57)
-        Me.RadTextBox2.Name = "RadTextBox2"
-        Me.RadTextBox2.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox2.TabIndex = 3
-        Me.RadTextBox2.ThemeName = "Office2010Silver"
+        Me.txtfname.Location = New System.Drawing.Point(108, 57)
+        Me.txtfname.Name = "txtfname"
+        Me.txtfname.Size = New System.Drawing.Size(190, 20)
+        Me.txtfname.TabIndex = 3
+        Me.txtfname.ThemeName = "Office2010Silver"
         '
         'RadLabel2
         '
@@ -86,13 +86,13 @@ Partial Class CreateAccount
         Me.RadLabel2.Text = "First Name"
         Me.RadLabel2.ThemeName = "Office2010Silver"
         '
-        'RadTextBox3
+        'txtmname
         '
-        Me.RadTextBox3.Location = New System.Drawing.Point(108, 81)
-        Me.RadTextBox3.Name = "RadTextBox3"
-        Me.RadTextBox3.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox3.TabIndex = 5
-        Me.RadTextBox3.ThemeName = "Office2010Silver"
+        Me.txtmname.Location = New System.Drawing.Point(108, 81)
+        Me.txtmname.Name = "txtmname"
+        Me.txtmname.Size = New System.Drawing.Size(190, 20)
+        Me.txtmname.TabIndex = 5
+        Me.txtmname.ThemeName = "Office2010Silver"
         '
         'RadLabel3
         '
@@ -103,13 +103,13 @@ Partial Class CreateAccount
         Me.RadLabel3.Text = "Middle Initial"
         Me.RadLabel3.ThemeName = "Office2010Silver"
         '
-        'RadTextBox4
+        'txtuname
         '
-        Me.RadTextBox4.Location = New System.Drawing.Point(108, 105)
-        Me.RadTextBox4.Name = "RadTextBox4"
-        Me.RadTextBox4.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox4.TabIndex = 7
-        Me.RadTextBox4.ThemeName = "Office2010Silver"
+        Me.txtuname.Location = New System.Drawing.Point(108, 105)
+        Me.txtuname.Name = "txtuname"
+        Me.txtuname.Size = New System.Drawing.Size(190, 20)
+        Me.txtuname.TabIndex = 7
+        Me.txtuname.ThemeName = "Office2010Silver"
         '
         'RadLabel4
         '
@@ -120,14 +120,14 @@ Partial Class CreateAccount
         Me.RadLabel4.Text = "Username"
         Me.RadLabel4.ThemeName = "Office2010Silver"
         '
-        'RadTextBox5
+        'txtpass
         '
-        Me.RadTextBox5.Location = New System.Drawing.Point(108, 131)
-        Me.RadTextBox5.Name = "RadTextBox5"
-        Me.RadTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.RadTextBox5.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox5.TabIndex = 9
-        Me.RadTextBox5.ThemeName = "Office2010Silver"
+        Me.txtpass.Location = New System.Drawing.Point(108, 131)
+        Me.txtpass.Name = "txtpass"
+        Me.txtpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txtpass.Size = New System.Drawing.Size(190, 20)
+        Me.txtpass.TabIndex = 9
+        Me.txtpass.ThemeName = "Office2010Silver"
         '
         'RadLabel5
         '
@@ -138,13 +138,13 @@ Partial Class CreateAccount
         Me.RadLabel5.Text = "Password"
         Me.RadLabel5.ThemeName = "Office2010Silver"
         '
-        'RadTextBox6
+        'txtemail
         '
-        Me.RadTextBox6.Location = New System.Drawing.Point(108, 155)
-        Me.RadTextBox6.Name = "RadTextBox6"
-        Me.RadTextBox6.Size = New System.Drawing.Size(190, 20)
-        Me.RadTextBox6.TabIndex = 11
-        Me.RadTextBox6.ThemeName = "Office2010Silver"
+        Me.txtemail.Location = New System.Drawing.Point(108, 155)
+        Me.txtemail.Name = "txtemail"
+        Me.txtemail.Size = New System.Drawing.Size(190, 20)
+        Me.txtemail.TabIndex = 11
+        Me.txtemail.ThemeName = "Office2010Silver"
         '
         'RadLabel6
         '
@@ -171,16 +171,16 @@ Partial Class CreateAccount
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(330, 325)
         Me.Controls.Add(Me.RadButton1)
-        Me.Controls.Add(Me.RadTextBox6)
-        Me.Controls.Add(Me.RadTextBox5)
+        Me.Controls.Add(Me.txtemail)
+        Me.Controls.Add(Me.txtpass)
         Me.Controls.Add(Me.RadLabel6)
         Me.Controls.Add(Me.RadLabel5)
-        Me.Controls.Add(Me.RadTextBox4)
-        Me.Controls.Add(Me.RadTextBox3)
+        Me.Controls.Add(Me.txtuname)
+        Me.Controls.Add(Me.txtmname)
         Me.Controls.Add(Me.RadLabel4)
-        Me.Controls.Add(Me.RadTextBox2)
+        Me.Controls.Add(Me.txtfname)
         Me.Controls.Add(Me.RadLabel3)
-        Me.Controls.Add(Me.RadTextBox1)
+        Me.Controls.Add(Me.txtlname)
         Me.Controls.Add(Me.RadLabel2)
         Me.Controls.Add(Me.RadLabel1)
         Me.Name = "CreateAccount"
@@ -192,16 +192,16 @@ Partial Class CreateAccount
         Me.Text = "CreateAccount"
         Me.ThemeName = "Office2010Silver"
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtlname, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtfname, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtmname, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtuname, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtpass, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadTextBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtemail, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
@@ -210,16 +210,16 @@ Partial Class CreateAccount
 
     End Sub
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents RadTextBox1 As Telerik.WinControls.UI.RadTextBox
-    Friend WithEvents RadTextBox2 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtlname As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtfname As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel2 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents RadTextBox3 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtmname As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel3 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents RadTextBox4 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtuname As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel4 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents RadTextBox5 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtpass As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel5 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents RadTextBox6 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents txtemail As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel6 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents RadButton1 As Telerik.WinControls.UI.RadButton
     Friend WithEvents Office2010SilverTheme1 As Telerik.WinControls.Themes.Office2010SilverTheme

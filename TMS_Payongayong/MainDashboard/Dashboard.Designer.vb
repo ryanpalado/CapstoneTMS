@@ -36,6 +36,10 @@ Partial Class Dashboard
         Me.RadMenu1 = New Telerik.WinControls.UI.RadMenu()
         Me.Office2010SilverTheme1 = New Telerik.WinControls.Themes.Office2010SilverTheme()
         Me.RadPageView1 = New Telerik.WinControls.UI.RadPageView()
+        Me.DriverInfoRprt1 = New TMS_Payongayong.DriverInfoRprt()
+        Me.RadGridView1 = New Telerik.WinControls.UI.MasterGridViewTemplate()
+        Me.driverInfoRprt2 = New TMS_Payongayong.DriverInfoRprt()
+        Me.RadMenuItem1 = New Telerik.WinControls.UI.RadMenuItem()
         Me.TabDashboard = New Telerik.WinControls.UI.RadPageViewPage()
         Me.RadPageView2 = New Telerik.WinControls.UI.RadPageView()
         Me.TabProfile = New Telerik.WinControls.UI.RadPageViewPage()
@@ -105,12 +109,10 @@ Partial Class Dashboard
         Me.CrystalReportViewer6 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.RadPageViewPage12 = New Telerik.WinControls.UI.RadPageViewPage()
         Me.tabSSSPayment = New Telerik.WinControls.UI.RadPageViewPage()
-        Me.DriverInfoRprt1 = New TMS_Payongayong.DriverInfoRprt()
-        Me.RadGridView1 = New Telerik.WinControls.UI.MasterGridViewTemplate()
-        Me.driverInfoRprt2 = New TMS_Payongayong.DriverInfoRprt()
         CType(Me.RadMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadPageView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPageView1.SuspendLayout()
+        CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabDashboard.SuspendLayout()
         CType(Me.RadPageView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPageView2.SuspendLayout()
@@ -183,7 +185,6 @@ Partial Class Dashboard
         CType(Me.RadButton11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabShortBoundary.SuspendLayout()
         CType(Me.RadButton12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -201,7 +202,7 @@ Partial Class Dashboard
         '
         'RadMenu1
         '
-        Me.RadMenu1.Items.AddRange(New Telerik.WinControls.RadItem() {Me.RadMenuItem2})
+        Me.RadMenu1.Items.AddRange(New Telerik.WinControls.RadItem() {Me.RadMenuItem2, Me.RadMenuItem1})
         Me.RadMenu1.Location = New System.Drawing.Point(0, 0)
         Me.RadMenu1.Name = "RadMenu1"
         Me.RadMenu1.Size = New System.Drawing.Size(1067, 23)
@@ -222,7 +223,7 @@ Partial Class Dashboard
         Me.RadPageView1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadPageView1.Location = New System.Drawing.Point(0, 23)
         Me.RadPageView1.Name = "RadPageView1"
-        Me.RadPageView1.SelectedPage = Me.TabReports
+        Me.RadPageView1.SelectedPage = Me.TabDashboard
         Me.RadPageView1.Size = New System.Drawing.Size(1067, 671)
         Me.RadPageView1.TabIndex = 3
         Me.RadPageView1.Text = "RadPageView1"
@@ -231,6 +232,14 @@ Partial Class Dashboard
         CType(Me.RadPageView1.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ItemAlignment = Telerik.WinControls.UI.StripViewItemAlignment.Near
         CType(Me.RadPageView1.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ItemFitMode = Telerik.WinControls.UI.StripViewItemFitMode.None
         CType(Me.RadPageView1.GetChildAt(0), Telerik.WinControls.UI.RadPageViewStripElement).ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth
+        '
+        'RadMenuItem1
+        '
+        Me.RadMenuItem1.AccessibleDescription = "Update Status Secretary"
+        Me.RadMenuItem1.AccessibleName = "Update Status Secretary"
+        Me.RadMenuItem1.Name = "RadMenuItem1"
+        Me.RadMenuItem1.Text = "Update Status Secretary"
+        Me.RadMenuItem1.Visibility = Telerik.WinControls.ElementVisibility.Visible
         '
         'TabDashboard
         '
@@ -469,8 +478,8 @@ Partial Class Dashboard
         'RadListView1
         '
         Me.RadListView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadListView1.Location = New System.Drawing.Point(15, 82)
         Me.RadListView1.Name = "RadListView1"
         Me.RadListView1.Size = New System.Drawing.Size(1012, 464)
@@ -494,9 +503,9 @@ Partial Class Dashboard
         Me.TabDriversMod.Controls.Add(Me.RadPageView3)
         Me.TabDriversMod.Image = Global.TMS_Payongayong.My.Resources.Resources.profle
         Me.TabDriversMod.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.TabDriversMod.Location = New System.Drawing.Point(12, 99)
+        Me.TabDriversMod.Location = New System.Drawing.Point(12, 105)
         Me.TabDriversMod.Name = "TabDriversMod"
-        Me.TabDriversMod.Size = New System.Drawing.Size(1043, 560)
+        Me.TabDriversMod.Size = New System.Drawing.Size(1043, 554)
         Me.TabDriversMod.Text = "Driver's Module"
         Me.TabDriversMod.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.TabDriversMod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -509,7 +518,7 @@ Partial Class Dashboard
         Me.RadPageView3.Location = New System.Drawing.Point(0, 0)
         Me.RadPageView3.Name = "RadPageView3"
         Me.RadPageView3.SelectedPage = Me.tabDriversList
-        Me.RadPageView3.Size = New System.Drawing.Size(1043, 560)
+        Me.RadPageView3.Size = New System.Drawing.Size(1043, 554)
         Me.RadPageView3.TabIndex = 0
         Me.RadPageView3.Text = "RadPageView3"
         Me.RadPageView3.ThemeName = "Office2010Silver"
@@ -523,18 +532,18 @@ Partial Class Dashboard
         Me.tabDriversList.Controls.Add(Me.btnNewDriver)
         Me.tabDriversList.Location = New System.Drawing.Point(12, 40)
         Me.tabDriversList.Name = "tabDriversList"
-        Me.tabDriversList.Size = New System.Drawing.Size(1019, 508)
+        Me.tabDriversList.Size = New System.Drawing.Size(1019, 502)
         Me.tabDriversList.Text = "List of Drivers"
         Me.tabDriversList.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'gridDriver
         '
         Me.gridDriver.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gridDriver.Location = New System.Drawing.Point(14, 95)
         '
-        '
+        'gridDriver
         '
         Me.gridDriver.MasterTemplate.AllowAddNewRow = False
         Me.gridDriver.MasterTemplate.AllowColumnReorder = False
@@ -558,7 +567,7 @@ Partial Class Dashboard
         Me.gridDriver.MasterTemplate.Columns.AddRange(New Telerik.WinControls.UI.GridViewDataColumn() {GridViewCommandColumn1, GridViewCommandColumn2})
         Me.gridDriver.Name = "gridDriver"
         Me.gridDriver.ReadOnly = True
-        Me.gridDriver.Size = New System.Drawing.Size(989, 397)
+        Me.gridDriver.Size = New System.Drawing.Size(989, 391)
         Me.gridDriver.TabIndex = 7
         Me.gridDriver.Text = "RadGridView2"
         Me.gridDriver.ThemeName = "Office2010Silver"
@@ -612,8 +621,8 @@ Partial Class Dashboard
         'gridDriverRemoved
         '
         Me.gridDriverRemoved.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gridDriverRemoved.Location = New System.Drawing.Point(15, 95)
         '
         '
@@ -701,11 +710,11 @@ Partial Class Dashboard
         'gridTaxi
         '
         Me.gridTaxi.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gridTaxi.Location = New System.Drawing.Point(14, 95)
         '
-        '
+        'gridTaxi
         '
         Me.gridTaxi.MasterTemplate.AllowAddNewRow = False
         Me.gridTaxi.MasterTemplate.AllowColumnReorder = False
@@ -783,8 +792,8 @@ Partial Class Dashboard
         'RadGridView3
         '
         Me.RadGridView3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadGridView3.Location = New System.Drawing.Point(15, 95)
         '
         '
@@ -857,8 +866,8 @@ Partial Class Dashboard
         'RadPageView5
         '
         Me.RadPageView5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadPageView5.Controls.Add(Me.TabDriverInfo)
         Me.RadPageView5.Controls.Add(Me.RadPageViewPage4)
         Me.RadPageView5.Controls.Add(Me.RadPageViewPage3)
@@ -894,10 +903,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer1.ActiveViewIndex = -1
         Me.CrystalReportViewer1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(3, 51)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
@@ -926,10 +934,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer2.ActiveViewIndex = -1
         Me.CrystalReportViewer2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer2.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer2.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer2.Location = New System.Drawing.Point(3, 46)
         Me.CrystalReportViewer2.Name = "CrystalReportViewer2"
@@ -986,10 +993,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer3.ActiveViewIndex = -1
         Me.CrystalReportViewer3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer3.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer3.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer3.Location = New System.Drawing.Point(3, 43)
         Me.CrystalReportViewer3.Name = "CrystalReportViewer3"
@@ -1019,10 +1025,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer4.ActiveViewIndex = -1
         Me.CrystalReportViewer4.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer4.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer4.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer4.Location = New System.Drawing.Point(3, 41)
         Me.CrystalReportViewer4.Name = "CrystalReportViewer4"
@@ -1052,10 +1057,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer5.ActiveViewIndex = -1
         Me.CrystalReportViewer5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer5.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer5.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer5.Location = New System.Drawing.Point(4, 43)
         Me.CrystalReportViewer5.Name = "CrystalReportViewer5"
@@ -1084,10 +1088,9 @@ Partial Class Dashboard
         '
         Me.CrystalReportViewer6.ActiveViewIndex = -1
         Me.CrystalReportViewer6.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CrystalReportViewer6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer6.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer6.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer6.Location = New System.Drawing.Point(4, 43)
         Me.CrystalReportViewer6.Name = "CrystalReportViewer6"
@@ -1129,6 +1132,7 @@ Partial Class Dashboard
         CType(Me.RadMenu1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadPageView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPageView1.ResumeLayout(False)
+        CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabDashboard.ResumeLayout(False)
         CType(Me.RadPageView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPageView2.ResumeLayout(False)
@@ -1207,7 +1211,6 @@ Partial Class Dashboard
         CType(Me.RadButton11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabShortBoundary.ResumeLayout(False)
         CType(Me.RadButton12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1290,5 +1293,6 @@ Partial Class Dashboard
     Friend WithEvents CrystalReportViewer5 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents RadButton12 As Telerik.WinControls.UI.RadButton
     Friend WithEvents CrystalReportViewer6 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents RadMenuItem1 As Telerik.WinControls.UI.RadMenuItem
 End Class
 

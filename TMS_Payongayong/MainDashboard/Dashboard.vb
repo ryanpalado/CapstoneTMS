@@ -95,7 +95,7 @@ Public Class Dashboard
 
         End Select
 
-
+        Dashboard_Load(sender, e)
     End Sub
 
     Private Sub gridDriverRemoved_CommandCellClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles gridDriverRemoved.CommandCellClick
@@ -122,6 +122,10 @@ Public Class Dashboard
                 End If
 
         End Select
+        Dashboard_Load(sender, e)
+
+
+
     End Sub
 
     Private Sub btnNewDriver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNewDriver.Click
@@ -223,20 +227,22 @@ Public Class Dashboard
                 End If
 
         End Select
+        Dashboard_Load(sender, e)
+
 
     End Sub
 
    
     Private Sub RadButton7_Click(sender As System.Object, e As System.EventArgs) Handles RadButton7.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\DriverInfoRprt.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\DriverInfoRprt.rpt")
         CrystalReportViewer1.ReportSource = cryRpt
         CrystalReportViewer1.Refresh()
     End Sub
 
     Private Sub RadButton8_Click(sender As System.Object, e As System.EventArgs) Handles RadButton8.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\TaxiInfoRprt.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\TaxiInfoRprt.rpt")
         CrystalReportViewer2.ReportSource = cryRpt
         CrystalReportViewer2.Refresh()
     End Sub
@@ -247,33 +253,41 @@ Public Class Dashboard
 
     Private Sub RadButton9_Click(sender As System.Object, e As System.EventArgs) Handles RadButton9.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\DriverFund.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\DriverFund.rpt")
         CrystalReportViewer3.ReportSource = cryRpt
         CrystalReportViewer3.Refresh()
     End Sub
 
     Private Sub RadButton10_Click(sender As System.Object, e As System.EventArgs) Handles RadButton10.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\CashAdvanceRprt.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\CashAdvanceRprt.rpt")
         CrystalReportViewer4.ReportSource = cryRpt
         CrystalReportViewer4.Refresh()
     End Sub
 
     Private Sub RadButton11_Click(sender As System.Object, e As System.EventArgs) Handles RadButton11.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\TaxiDamagesRprt.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\TaxiDamagesRprt.rpt")
         CrystalReportViewer5.ReportSource = cryRpt
         CrystalReportViewer5.Refresh()
     End Sub
 
     Private Sub RadButton12_Click(sender As System.Object, e As System.EventArgs) Handles RadButton12.Click
         Dim cryRpt As New ReportDocument
-        cryRpt.Load("C:\Users\RPALADO\Desktop\01-27-15\TMS_Payongayong\TMS_Payongayong\Crystal Report\ShortBoundaryRprt.rpt")
+        cryRpt.Load(Application.StartupPath & "\Crystal Report\ShortBoundaryRprt.rpt")
         CrystalReportViewer6.ReportSource = cryRpt
         CrystalReportViewer6.Refresh()
     End Sub
 
     Private Sub RadButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton3.Click
         ADDDispatch.Show()
+    End Sub
+
+    Private Sub RadPageViewPage1_Paint(sender As Object, e As PaintEventArgs) Handles RadPageViewPage1.Paint
+
+    End Sub
+
+    Private Sub RadPageView1_SelectedPageChanged(sender As Object, e As EventArgs) Handles RadPageView1.SelectedPageChanged
+
     End Sub
 End Class

@@ -6,8 +6,9 @@ Module DriversFundMod
 
     '---------------- DRIVERS FUND------------------'
 
-    'Fetching of all drivers funds and displays to the gridDriver(GridView)
+    'Fetching of all drivers funds and displays to the lvDriverFunds(ListView)
     Public Sub getAllDriversFundFromDB()
+        'clear listview
         ViewDriver.lvDriversFund.Items.Clear()
         'select all drivers info
 
